@@ -13,7 +13,7 @@ def doDesktop():
             "https://dcps.instructure.com/courses/237343", "https://dcps.instructure.com/courses/235737", "https://dcps.instructure.com/courses/237343/modules", "https://dcps.instructure.com/courses/237226/modules"]
     pyautogui.hotkey('winleft', 'd')
     brave_file = "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe %s"
-    webbrowser.get(brave_file).open_new_tab(random.choice(websites))
+    webbrowser.get(brave_file).open(random.choice(websites))
 
 
 def confirm():
@@ -25,8 +25,6 @@ def confirm():
     else:
         root.destroy()
 
-
-# confirm()
+confirm()
 # start the app
-# root.mainloop()
-doDesktop()
+root.mainloop()
